@@ -19,7 +19,11 @@ namespace MotmWebApi.Controllers
                                  "connection timeout=30"))
             {
                 connection.Open();
-                string sql = "SELECT * FROM Club";
+                //string sql = "SELECT * FROM Club";
+                string sql = "SELECT * FROM Club AS C " +
+                    "INNER JOIN Team AS T on C.clubId = T.fk_clubId " +
+                    "INNER JOIN TeamHasPlayer AS THS ON T.teamId = THS.fk_teamId " +
+                    "INNER JOIN Player AS P ON THS.fk_playerId = P.playerId";
                 using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                 {
                     using (var reader = cmd.ExecuteReader())
