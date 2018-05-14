@@ -9,7 +9,7 @@ namespace MotmWebApi.Controllers
     {
         // GET: api/ClubApi
         [HttpGet]
-        public List<Club> GetClubs()
+        public List<Club> Get()
         {
             var listOfClubs = new List<Club>();
 
@@ -43,7 +43,7 @@ namespace MotmWebApi.Controllers
 
         // GET: api/ClubApi/5
         [HttpGet]
-        public Club GetClub(int id)
+        public Club Get(int id)
         {
             Club club = new Club();
 
@@ -75,8 +75,8 @@ namespace MotmWebApi.Controllers
         }
 
         // POST: api/ClubApi
-        [Route("api/ClubApi")]
-        [AcceptVerbs("MKCOL")]
+        //[Route("api/ClubApi")]
+        //[AcceptVerbs("MKCOL")]
         [HttpPost]
         public Club PostClub([FromBody]Club c)
         {
