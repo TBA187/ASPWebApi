@@ -206,10 +206,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Controllers/ClubApiController.cs">
-      <publishTime>05/14/2018 21:17:57</publishTime>
+      <publishTime>05/14/2018 21:28:48</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/Club.cs">
+      <publishTime>05/14/2018 21:28:19</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>01/01/0001 00:00:00</publishTime>

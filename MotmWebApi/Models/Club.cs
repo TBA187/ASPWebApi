@@ -11,6 +11,5 @@ namespace MotmWebApi.Models
         public string clubName { get; set; }
         public string clubAddress { get; set; }
         public string clubLogo { get; set; }
-
     }
 }
